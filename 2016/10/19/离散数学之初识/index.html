@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java Struts2," />
 
 
 
@@ -84,12 +84,46 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="action中的执行方法
+
+Action中默认的执行方法是execute方法
+
+在struts.xml为Action配置method属性
+
+DMI(Dynamic Method Invocation - 动态方法调用)
+
+使用通配符(wildcard mappings)映射方式
+
+提交按钮指定提交方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Struts2之Hello,World">
+<meta property="og:url" content="http://yoursite.com/2016/10/19/Struts2之Hello-World/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="action中的执行方法
+
+Action中默认的执行方法是execute方法
+
+在struts.xml为Action配置method属性
+
+DMI(Dynamic Method Invocation - 动态方法调用)
+
+使用通配符(wildcard mappings)映射方式
+
+提交按钮指定提交方法">
+<meta property="og:updated_time" content="2016-10-19T03:20:23.600Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Struts2之Hello,World">
+<meta name="twitter:description" content="action中的执行方法
+
+Action中默认的执行方法是execute方法
+
+在struts.xml为Action配置method属性
+
+DMI(Dynamic Method Invocation - 动态方法调用)
+
+使用通配符(wildcard mappings)映射方式
+
+提交按钮指定提交方法">
 
 
 
@@ -110,10 +144,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/19/Struts2之Hello-World/"/>
 
 
-  <title> Mr.Robot </title>
+  <title> Struts2之Hello,World | Hexo </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -134,9 +168,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -146,7 +178,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Mr.Robot</span>
+      <span class="site-title">Hexo</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -171,7 +203,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -179,7 +211,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -215,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,10 +269,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/18/Hexo-github搭建自己的博客/" itemprop="url">
-                  Hexo+github搭建自己的博客
-                </a>
+                Struts2之Hello,World
               
             
           </h1>
@@ -251,9 +280,9 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
-            <time itemprop="dateCreated" datetime="2016-10-18T22:35:01+08:00" content="2016-10-18">
-              2016-10-18
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-10-19T09:34:52+08:00" content="2016-10-19">
+              2016-10-19
             </time>
           </span>
 
@@ -263,11 +292,11 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              <span class="post-meta-item-text">in</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/JavaEE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaEE</span>
                   </a>
                 </span>
 
@@ -299,40 +328,73 @@
       
 
       
-        
-          
-            <p>这是第一次尝试搭建个人博客，还有很多地方有待完善</p>
+        <p>action中的执行方法</p>
+<ol>
+<li><p>Action中默认的执行方法是execute方法</p>
+</li>
+<li><p>在struts.xml为Action配置method属性</p>
+</li>
+<li><p>DMI(Dynamic Method Invocation - 动态方法调用)</p>
+</li>
+<li><p>使用通配符(wildcard mappings)映射方式</p>
+</li>
+<li><p>提交按钮指定提交方法</p>
+</li>
+</ol>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Java-Struts2/" rel="tag">#Java Struts2</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/18/Hexo-github搭建自己的博客/" rel="next" title="Hexo+github搭建自己的博客">
+                <i class="fa fa-chevron-left"></i> Hexo+github搭建自己的博客
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -340,6 +402,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -359,8 +425,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -371,16 +446,16 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">articles</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
 
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
@@ -388,8 +463,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">Tags</span>
               </a>
             </div>
           
@@ -410,6 +485,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -433,11 +519,11 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  Thème -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
@@ -506,6 +592,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
