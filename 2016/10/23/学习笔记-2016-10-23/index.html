@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JAVA," />
 
 
 
@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="Stay hungry, Stay Foolish">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mr.Robot">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="首先明确一个问题，JAVA之所能够跨平台运行，是因为程序都是运行在JAVA虚拟机上所有的JAVA程序都运行在JVM中
+那么可以理解为由JVM来管理JAVA程序的内存基本数据类型+引用数据类型在JVM中划分5块内存区1.寄存器（Program Counter Register）2.本地方法区（系统相关）3.方法区（数据区，共享区，ShareData）4.栈    method -&amp;gt; 栈">
+<meta property="og:type" content="article">
+<meta property="og:title" content="'学习笔记-2016-10-23'">
+<meta property="og:url" content="http://yoursite.com/2016/10/23/学习笔记-2016-10-23/index.html">
 <meta property="og:site_name" content="Mr.Robot">
-<meta property="og:description" content="Stay hungry, Stay Foolish">
+<meta property="og:description" content="首先明确一个问题，JAVA之所能够跨平台运行，是因为程序都是运行在JAVA虚拟机上所有的JAVA程序都运行在JVM中
+那么可以理解为由JVM来管理JAVA程序的内存基本数据类型+引用数据类型在JVM中划分5块内存区1.寄存器（Program Counter Register）2.本地方法区（系统相关）3.方法区（数据区，共享区，ShareData）4.栈    method -&amp;gt; 栈">
+<meta property="og:updated_time" content="2016-10-23T16:28:30.379Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr.Robot">
-<meta name="twitter:description" content="Stay hungry, Stay Foolish">
+<meta name="twitter:title" content="'学习笔记-2016-10-23'">
+<meta name="twitter:description" content="首先明确一个问题，JAVA之所能够跨平台运行，是因为程序都是运行在JAVA虚拟机上所有的JAVA程序都运行在JVM中
+那么可以理解为由JVM来管理JAVA程序的内存基本数据类型+引用数据类型在JVM中划分5块内存区1.寄存器（Program Counter Register）2.本地方法区（系统相关）3.方法区（数据区，共享区，ShareData）4.栈    method -&amp;gt; 栈">
 
 
 
@@ -113,10 +117,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/23/学习笔记-2016-10-23/"/>
 
 
-  <title> Mr.Robot </title>
+  <title> '学习笔记-2016-10-23' | Mr.Robot </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -137,9 +141,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -218,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -240,10 +242,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/23/学习笔记-2016-10-23/" itemprop="url">
-                  '学习笔记-2016-10-23'
-                </a>
+                '学习笔记-2016-10-23'
               
             
           </h1>
@@ -283,9 +282,7 @@
       
 
       
-        
-          
-            <p>首先明确一个问题，JAVA之所能够跨平台运行，是因为程序都是运行在JAVA虚拟机上<br>所有的JAVA程序都运行在JVM中</p>
+        <p>首先明确一个问题，JAVA之所能够跨平台运行，是因为程序都是运行在JAVA虚拟机上<br>所有的JAVA程序都运行在JVM中</p>
 <h2 id="那么可以理解为由JVM来管理JAVA程序的内存"><a href="#那么可以理解为由JVM来管理JAVA程序的内存" class="headerlink" title="那么可以理解为由JVM来管理JAVA程序的内存"></a>那么可以理解为由JVM来管理JAVA程序的内存</h2><h2 id="基本数据类型-引用数据类型"><a href="#基本数据类型-引用数据类型" class="headerlink" title="基本数据类型+引用数据类型"></a>基本数据类型+引用数据类型</h2><p>在JVM中划分5块内存区<br>1.寄存器（Program Counter Register）<br>2.本地方法区（系统相关）<br>3.方法区（数据区，共享区，ShareData）<br>4.栈<br>    method -&gt; 栈<br>    存储的都是局部变量（Var）,也在栈区<br>    变量所属的作用域一旦结束，该变量就自动释放<br>5.堆<br>    存储的是数组和对象（数组就是对象）<br>    堆中存储实体<br>    new 建立的对象都在堆中。<br>    布尔值默认为假<br>    特点：<br>    1.每一个实体都有一个首地址值<br>    2.堆内存中的每一个变量都有默认初始化值<br>    根据类型不同而不同。</p>
 <hr>
 <p>定义类：定义成员变量filed（属性）和成员函数method（行为）</p>
@@ -314,259 +311,59 @@ System.out.println(c2);
 <h2 id="简单来说一句话总结：Main函数是入口，需要直接被加载，无法创建对象，所以static修饰。"><a href="#简单来说一句话总结：Main函数是入口，需要直接被加载，无法创建对象，所以static修饰。" class="headerlink" title="简单来说一句话总结：Main函数是入口，需要直接被加载，无法创建对象，所以static修饰。"></a>简单来说一句话总结：Main函数是入口，需要直接被加载，无法创建对象，所以static修饰。</h2><p>主函数特殊之处：<br>1.格式固定<br>2.被JVM所识别和调用</p>
 <p>public static void main(String[] args)//new String[0] JVM往main函数中传的参数<br>分析：<br>public：因为权限最大<br>static：不需要对象，直接用主函数所属类名调用<br>void：没有返回值<br>main：函数名，不是关键字，只是一个JVM识别的固定的名字<br>string[] args: 主函数参数列表，是一个数组类型的参数，而且元素都是字符串类型<br>接受在编译时的参数</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/19/离散数学之初识-1/" itemprop="url">
-                  离散数学之初识
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-10-19T23:14:53+08:00" content="2016-10-19">
-              2016-10-19
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/JAVA/" rel="tag">#JAVA</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>离散数学-初识</p>
-<p>第一次数学危机：<br>无理数，毕达哥拉斯 </p>
-<p>第二次数学危机：<br>无穷，无穷小，格兰迪级数：1+1-1+1—1…….</p>
-<p>第三次数学危机：<br>理发师悖论<br>说谎的克利特人</p>
-<p>数学建立在公里化集合论和数理逻辑上<br>完备的系统存在自相矛盾</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/10/19/离散数学之初识-1/" rel="next" title="离散数学之初识">
+                <i class="fa fa-chevron-left"></i> 离散数学之初识
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/10/19/Struts2之Hello-World/" itemprop="url">
-                  Struts2之Hello,World
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-10-19T09:34:52+08:00" content="2016-10-19">
-              2016-10-19
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">in</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JavaEE/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaEE</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>action中的执行方法</p>
-<ol>
-<li><p>Action中默认的执行方法是execute方法</p>
-</li>
-<li><p>在struts.xml为Action配置method属性</p>
-</li>
-<li><p>DMI(Dynamic Method Invocation - 动态方法调用)</p>
-</li>
-<li><p>使用通配符(wildcard mappings)映射方式</p>
-</li>
-<li><p>提交按钮指定提交方法</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -574,6 +371,10 @@ System.out.println(c2);
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -593,8 +394,17 @@ System.out.println(c2);
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -644,6 +454,17 @@ System.out.println(c2);
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#那么可以理解为由JVM来管理JAVA程序的内存"><span class="nav-number">1.</span> <span class="nav-text">那么可以理解为由JVM来管理JAVA程序的内存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本数据类型-引用数据类型"><span class="nav-number">2.</span> <span class="nav-text">基本数据类型+引用数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-成员变量也成为实例变量，即对象存在，该变量才存在。"><span class="nav-number">3.</span> <span class="nav-text">6.成员变量也成为实例变量，即对象存在，该变量才存在。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#show-new-Car"><span class="nav-number">4.</span> <span class="nav-text">show(new Car())</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单说：哪个对象调用了this所在的函数，this就代表哪个对象"><span class="nav-number">5.</span> <span class="nav-text">简单说：哪个对象调用了this所在的函数，this就代表哪个对象    </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例：java-mainDemo（类名）-haha-hehe-xixi（参数）"><span class="nav-number">6.</span> <span class="nav-text">例：java mainDemo（类名） haha hehe xixi（参数） </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单来说一句话总结：Main函数是入口，需要直接被加载，无法创建对象，所以static修饰。"><span class="nav-number">7.</span> <span class="nav-text">简单来说一句话总结：Main函数是入口，需要直接被加载，无法创建对象，所以static修饰。</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -740,6 +561,10 @@ System.out.println(c2);
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
