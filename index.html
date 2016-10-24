@@ -241,6 +241,152 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/24/学习笔记-2016-12-24/" itemprop="url">
+                  学习笔记-2016-12-24
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-10-24T23:05:15+08:00" content="2016-10-24">
+              2016-10-24
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>静态变量什么时候用？<br>1.静态变量<br>    当分析对象中所具备的成员变量的值都是相同的。<br>    这是这个成员就可以被静态修饰。<br>    只要数据在对象中都是不同的，就是对象的特有数据，必须存储在对象中，非静态<br>    如果是相同的数据，对象不需要做修改，只需要使用即可，不需要存储在对象中，定义成静态。<br>2.静态函数（功能）<br>    函数是否用静态修饰，就参考一点，就是该函数功能是否有访问到对象中的特有数据<br>    简单点说，从源代码看，该功能是否需要访问非静态的成员变量，如果有需要，该功能就是非静态。<br>    如果不需要，就可以将该功能定义成静态<br>    当然，也可以定义成非静态，但是非静态需要被对象调用，而仅创建对象调用非静态的没有访问特有数据额方法，该对象的创建是没有意思的</p>
+<h2 id="静态函数只能调用静态成员变量，非静态函数则可以调用普通成员和静态成员。"><a href="#静态函数只能调用静态成员变量，非静态函数则可以调用普通成员和静态成员。" class="headerlink" title="静态函数只能调用静态成员变量，非静态函数则可以调用普通成员和静态成员。    "></a>静态函数只能调用静态成员变量，非静态函数则可以调用普通成员和静态成员。    </h2><p>构造代码块，可以给所有对象进行初始化<br>{} 创建对象时调用<br>构造函数，给对象进行针对性的初始化    </p>
+<p>静态代码块<br>static{}<br>随着类的加载而执行。而且只执行一次<br>作用：用于给类初始化</p>
+<p>局部代码块（限定局部变量生成周期），构造代码块 ，静态代码块</p>
+<p>执行顺序：静态代码块-&gt;构造代码块-&gt;构造函数</p>
+<p>测试：<br>public class Person {<br>    private String name;<br>    private static String country;</p>
+<pre><code>{               //构造代码块，在创建对象前执行
+    show();
+}
+
+Person(){       //创建对象时调用构造函数
+    country = &quot;cn&quot;;
+}
+
+static{         //静态代码块在类加载时执行
+    country = &quot;USA&quot;;
+}
+
+public void show(){
+    System.out.println(country);
+}
+
+
+public static void main(String[] args){
+    Person p1 = new Person();
+    p1.show();
+}
+</code></pre><p>}</p>
+<p>//打印结果：<br>USA</p>
+<h2 id="cn"><a href="#cn" class="headerlink" title="cn"></a>cn</h2><p>继承<br>好处：<br>1.提高代码复用性<br>2.让类与类之间产生了关系，给第三特征多态提供了前提</p>
+<p>单继承：即只有一个直接飞父类<br>多继承：通过“多实现”的方式体现</p>
+<p>当要使用一个继承体系时，<br>1.查看该体系的顶层类，了解该体系的基本功能。<br>2.创建体系中的最子类对象，完成功能的使用。</p>
+<p>/<em><br>在子父类中，成员的特点体现（所有的成员）<br>1.成员变量<br>2.成员函数<br>3.构造函数<br>*</em>/</p>
+<p>/<em>1.成员变量<br>当本类的成员和局部变量同名用this区分<br>当子父类中的成员变量同名用super区分<br>this和super用户很相似<br>this代表一个本类对象的引用，super代表一个父类的空间<br>子类不可访问父类的私有成员变量，要想访问，通过get、set方法<br>*</em>/</p>
+<p>/*2.成员函数<br>当子父类中出现成员函数一模一样的情况，会运行子类的函数<br>这种现象，称为覆盖操作，这是函数在子父类中的特性。<br>函数两个特性，一个叫重载，一个叫覆盖。<br>1.重载，在同一个类中 overload，多个同名函数，通 过参数列表实现<br>2.覆盖，在子类中。覆盖也称为重写，override</p>
+<p>覆盖主要实现：<br>1.子类方法覆盖父类方法时，子类权限必须要大于等于父类的权限<br>2.静态只能覆盖静态，或被静态覆盖<br>**/</p>
+<p>什么时候使用覆盖操作：<br>当对一个类进行子类的扩展时，子类需要保留父类的功能声明，<br>但是需要定义子类中该功能的特有内容时，就使用覆盖操作完成。</p>
+<p>子父类中构造函数的特点<br>在子类构造对象时，发现，访问子类构造函数时，<br>父类也运行了。<br>为什么呢？<br>原因是：在子类的构造函数第一行有一个默认的隐式语句。super（）；<br>注意：<br>1.构造函数不能覆盖<br>2.构造函数</p>
+<p>为什么子类实例化的时候要访问父类中的构造方法？<br>那是因为子类继承了父类，获取到了父类中的内容（属性），所以在使用父类内容之前<br>要先看父类是如何对自己内容进行初始化的</p>
+<p>所以子类在构造对象时，必须访问父类中的构造函数。<br>为什么完成这个必须的动作，就在子类得到构造函数中加入了super（）语句</p>
+<p>如果父类中没有定义空参数构造函数，那么子类的构造函数必须用super明确要调用父类中的哪个构造函数。<br>同时子类构造函数中如果使用this调用了本类构造函数是，<br>那么super就没有了，因为super和this都只能定义第一行，所有只能有一个。<br>但是可以保证的是，子类中肯定会有其他的构造函数访问父类的构造函数。</p>
+<p>注意：<br>1.super 语句必须要定义在子类构造函数的第一行。因为父类的初始化动作要先完成。<br>2.当子父类出现重名函数时，并且该函数在父类的构造函数中调用，则在子函数的构造函数中会去优先调用子函数的该函数<br>例：</p>
+<p>class Fu {<br>    Fu(){<br>       show();<br>    }<br>    void show(){}<br>}</p>
+<p>class Zi extends Fu {<br>    int num = 5;<br>    Zi(){<br>        show();<br>    }</p>
+<pre><code>void show(){
+    System.out.println(num);
+}
+</code></pre><p>}</p>
+<p>public class ExtendsDemo2 {<br>    public static void main(String[] args) {</p>
+<pre><code>    Zi z = new Zi();
+
+}
+</code></pre><p>}<br>//输出结果：<br>0<br>5<br>/*<br>一个对象实例化过程：<br>Person p = new Person()<br>1.JVM会读取指定的路径下的Person.class文件，并加载进内存，<br>并会先加载Person的父类（如果有直接的父类的情况下），<br>2.在堆内存中开辟空间，分配地址。<br>3.并在对象空间中，对对象中的属性进行默认初始化<br>4.调用对应的构造函数进行初始化。<br>5.在构造函数中，第一行会先调用父类中构造函数进行初始化。<br>6.父类初始化完毕后，在对子类的属性进行显示初始化。<br>7.在进行子类构造函数的特定初始化<br>8.初始化完毕后，将地址赋值给引用变量。  </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/23/学习笔记-2016-10-23/" itemprop="url">
                   '学习笔记-2016-10-23'
                 </a>
@@ -605,7 +751,7 @@ System.out.println(c2);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
@@ -622,7 +768,7 @@ System.out.println(c2);
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">Tags</span>
               </a>
             </div>
