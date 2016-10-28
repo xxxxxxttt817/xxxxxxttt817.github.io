@@ -241,6 +241,124 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/28/Collection/" itemprop="url">
+                  Collection小结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-10-28T15:16:25+08:00" content="2016-10-28">
+              2016-10-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Collection特点：<br>1.用于存储对象的容器<br>2.长度可变<br>3.不可以存储基本数据类型值 存储基本数据类型，用包装类</p>
+<p>框架顶层Collection常见方法：<br>1.添加：<br>    boolean add<br>    boolean addAll(Colloction coll)<br>2.删除：<br>    boolean remove(object obj)<br>    boolean removeAll(Colloction coll)<br>    boolean clear(Colloction coll)<br>3.获取：<br>    int size() //获取集合中元素的个数<br>    Iterator Iterator()<br>    该对象必须依赖于具体容器，因为每一个容器的数据结构都不同。<br>    所以该迭代器对象是在容器中进行内部实现的。<br>    对于使用容器者而言，具体的实现不重要，只要通过容器获取到该实现额迭代器的对象即可。<br>    也就是iterator方法。</p>
+<p>4.判断<br>    boolean isEmpty()<br>    boolean contains(object obj)<br>    boolean contains(object obj)</p>
+<hr>
+<p>迭代器：<br>class Demo{<br>    public static void main(String[] args){<br>        Collection coll = new ArrayList();</p>
+<pre><code>    coll.add(&quot;1&quot;);
+    coll.add(&quot;2&quot;);
+    coll.add(&quot;3&quot;);
+    coll.add(&quot;4&quot;);
+
+/*
+    两种方法使用Iterator取出Collection中的元素
+*/    
+
+    //方法1：使用了Collection中的iterator()方法。
+    Iterator i = coll.iterator();
+    if (i.hasNext()){
+        i.next();
+    }
+
+    //方法2：
+    for(Iterator it = coll.iterator(); it.hasNext();){
+        System.out.println(it.next());
+    }
+}
+</code></pre><h2 id=""><a href="#" class="headerlink" title="}"></a>}</h2>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/28/String/" itemprop="url">
                   String类小结
                 </a>
@@ -1029,7 +1147,7 @@ System.out.println(c2);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
