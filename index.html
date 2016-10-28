@@ -241,6 +241,115 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/28/String/" itemprop="url">
+                  String类小结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-10-28T13:43:50+08:00" content="2016-10-28">
+              2016-10-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>String类特点：<br>字符串一旦初始化就不会被改变</p>
+<p>String s = “abc”;<br>字符串常量被存储在字符串常量池中</p>
+<p>String s = new String(“abc”)<br>创建两个对象，一个new一个字符串对象在堆内存中</p>
+<p>String s1 = new String(“abc”)；<br>String s2 = s1.intern();</p>
+<p>System.out.println(s1 == s2);</p>
+<h2 id="输出结果：false"><a href="#输出结果：false" class="headerlink" title="//输出结果：false"></a>//输出结果：false</h2><p>/*<br>class TicketDemo {<br>    String s1 = “abc”;<br>    String s2 = new String(s1);</p>
+<pre><code>public static void main(String[] args){
+    TicketDemo t = new TicketDemo();
+
+    System.out.println(t.s1.equals(t.s2));
+    System.out.println(t.s1 == t.s2);
+}
+</code></pre><p>}<br>//<br>输出结果：<br>true<br>false<br>说明对象的值相等，指针不同，说明是两个对象。<br>*/</p>
+<p>/*<br>StringBuffer:字符串缓冲区。<br>用于存储数据的容器。<br>特点：<br>1.长度可变,默认初始容量为16个字符<br>2.可以存储不同类型的数据。<br>3.最终要转成字符串进行使用。<br>4.可以对字符串进行修改。</p>
+<p>既然是一个容器。应该具备什么功能<br>1.添加：<br>StringBuffer append(data)<br>2.删除：<br>delete<br>*/</p>
+<p>StringBuffer线程同步，多线程安全，单线程效率较低，因为要判断锁。<br>StringBuilder线程不同步，单线程使用，提高效率。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/26/学习笔记-2016-10-26/" itemprop="url">
                   学习笔记-2016-10-26
                 </a>
@@ -920,7 +1029,7 @@ System.out.println(c2);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
